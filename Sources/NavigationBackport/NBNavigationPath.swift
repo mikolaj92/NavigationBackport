@@ -3,7 +3,7 @@ import SwiftUI
 
 @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
 public struct NBNavigationPath: Equatable {
-  var elements: [AnyHashable]
+  public var elements: [AnyHashable]
 
   public var count: Int { elements.count }
   public var isEmpty: Bool { elements.isEmpty }
