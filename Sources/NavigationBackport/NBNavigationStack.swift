@@ -2,6 +2,9 @@ import Foundation
 import SwiftUI
 
 @available(iOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+@available(tvOS, deprecated: 16.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+@available(macOS, deprecated: 12.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
+@available(watchOS, deprecated: 8.0, message: "Use SwiftUI's Navigation API beyond iOS 15")
 public struct NBNavigationStack<Root: View, Data: Hashable>: View {
   var unownedPath: Binding<[Data]>?
   @State var ownedPath: [Data] = []
